@@ -1,0 +1,31 @@
+{
+  "name": "electron-updater",
+  "version": "1.0.0",
+  "description": "Meu Jogo Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Seu Nome",
+  "license": "ISC",
+  "dependencies": {
+    "blakejs": "^1.1.1",
+    "unzipper": "^0.10.11"
+  },
+  "devDependencies": {
+    "electron": "^13.1.7"
+  },
+  "build": {
+    "appId": "gitzwc.com",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
